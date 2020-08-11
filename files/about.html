@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Atal Shrestha</title>
+    <meta name="description" content="Coursework Website" />
+    <meta name="keywords" content="HTML,CSS,JS" />
+    <meta name="author" content="Atal Shrestha" />
+    <meta http-equiv="refresh" content="80">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <script src="myScript.js"></script>
+    <link rel="icon" type="image/png" href="../Images/logo_transparent.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* full page height */
+        
+        html {
+            height: 100%;
+        }
+        /* Style for body */
+        
+        body {
+            min-height: 100%;
+            background: #eee;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #222;
+            font-size: 14px;
+            line-height: 26px;
+            padding-bottom: 50px;
+        }
+        /* style for container in the window */
+        
+        .container {
+            max-width: 700px;
+            background: #fff;
+            margin: 0px auto 0px;
+            box-shadow: 3px 3px 2px #DAD7D7;
+            border-radius: 4px;
+            padding: 40px;
+            margin-top: 50px;
+        }
+        
+        .full-name {
+            font-size: 40px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        
+        .first-name {
+            font-weight: 700;
+        }
+        
+        .last-name {
+            font-weight: 300;
+        }
+        
+        .email,
+        .phone {
+            color: #999;
+            font-weight: 300;
+        }
+        /* separator between flex */
+        
+        .separator {
+            height: 10px;
+            display: inline-block;
+            border-left: 2px solid #999;
+            margin: 0px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <a href="index.html"><img src="../Images/logo_transparent.png"></a>
+            </div>
+            <div class="url">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="about.html">About</a></li>
+                    <!-- about is the active page -->
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="head-1">
+            <div class="full-name">
+                <span class="first-name">Atal</span>
+                <span class="last-name">Shrestha</span>
+            </div>
+            <div class="contact-info">
+                <span class="email">Email: </span>
+                <span class="email-val">atalshrestha2000@gmail.com</span>
+                <span class="separator"></span>
+                <span class="phone">Phone: </span>
+                <span class="phone-val">9860661760</span>
+            </div>
+            <!-- table for CV -->
+            <table style="font-size: 17px;">
+                <tr>
+                    <th><br>PERSONAL PROFILE<br></th>
+                </tr>
+                <tr align="left">
+                    <td>
+                        <p>I am a first year student at Islington college, kamalpokhari studying B.Sc.Computing. I have developed excellent analytical and logical skill throughout my time studing this course. I have come to develope a sturdy core fondation
+                            of programming in different language through my study. My determination and dedication is highlighted through my academic achievements and now looking to further my skill and develop in this field.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th><br>EDUCATION</th>
+                </tr>
+                <br>
+                <tr align="left">
+                    <br>
+                    <td><b>Islington College, kamalpokhari, Kathmandu </b>
+                        <ul>
+                            <li>B.Sc.Computing-Year 1</li>
+                        </ul>
+                        <br>
+                        <b>St.Xavier's School, Jawalakhel, Kathmandu</b>
+                        <ul>
+                            <li>+2 in Science-2018</li>
+                            <li>SLC-2016</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th><br>COMPUTER SKILLS </th>
+                </tr>
+                <tr align="left">
+                    <td>
+                        <ul>
+                            <li>JAVA</li>
+                            <li>Python </li>
+                            <li>HTML, CSS, JavaScript </li>
+                            <li>Computer Hardware</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th><br>PRE-PROFESSIONAL EXPERIENCE</th>
+                </tr>
+                <tr align="left">
+                    <td>
+                        <ul>
+                            <li>Organized a talent show for charity.</li>
+                            <li>Raised over Rs.70000.</li>
+                            <li>Built a library in Jhapa.</li>
+                            <li>Worked as a volunteer in different events at college.</li>
+                            <li>Have led group discussions on various issues.</li>
+                            <li>Initiated a campaign for interact club on St.Xavier's school.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+
+    <!-- topFunction function gets called when button is clicked -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-4x fa-angle-up"></i></button>
+    <div class="footer">
+        <ul align="center">
+            <br>
+            <li><i class="fa fa-map-marker" style="font-size:24px"></i><span> Ason, Kathmandu</span></li>
+            <li><i class="fa fa-envelope" style="font-size:24px"></i><span> Email: atalshrestha2000@gmail.com</span></li>
+            <li><i class="fa fa-phone" style="font-size:24px"></i><span> +977 9860661760</span></li>
+        </ul>
+        <p align="center">&#169; 2019: Atal Shrestha</p>
+    </div>
+
+</body>
+
+</html>

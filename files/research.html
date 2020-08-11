@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Atal Shrestha</title>
+    <meta name="description" content="Coursework Website" />
+    <meta name="keywords" content="HTML,CSS,JS" />
+    <meta name="author" content="Atal Shrestha" />
+    <meta http-equiv="refresh" content="80">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <script src="myScript.js"></script>
+    <link rel="icon" type="image/png" href="../Images/logo_transparent.png" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            min-height: 100%;
+            background: linear-gradient(#141e30, #243b55);
+            color: #8d7c7c;
+        }
+        /* style the body  */
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <a href="index.html"><img src="../Images/logo_transparent.png"></a>
+            </div>
+            <div class="url">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li class="active"><a href="research.html">Research</a></li>
+                    <!-- research page is the active page -->
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <br>
+    <h1 align="center" style="font-family: 'PT Serif', serif;">Research</h1>
+    <p style="font-family: 'PT Serif', serif;">
+        <h3>Please click on the menu to check the research material: </h3>
+    </p>
+    <br>
+    <div class="tabContainer">
+        <div class="tab">
+            <button class="tablinks" onclick="research(event, 'research1')"><b>Research 1</b></button>
+            <button class="tablinks" onclick="research(event, 'research2')"><b>Research 2</b></button>
+            <button class="tablinks" onclick="research(event, 'research3')"><b>Research 3</b></button>
+            <button class="tablinks" onclick="research(event, 'research4')"><b>Research 4</b></button>
+            <button class="tablinks" onclick="research(event, 'research5')"><b>Research 5</b></button>
+        </div>
+
+        <div id="research1" class="tabcontent">
+            <h3>
+                <center>W3schools.com</center>
+            </h3>
+            <br>
+            <center><img src="../Images/main_research.png" alt="W3schools" height=350px width=500px></center>
+            <p style="font-family: 'PT Serif', serif; font-size:17px">Referring this website helped in gaining clear concept about HTML, CSS and JavaScript. Many components were inspired from this website due to its simple structure with high user-friendly and user readability. Through this website I learned
+                alot about the use of HTML, CSS and JavaScript in many different ways. It also helped in gaining vast knowledge about different functions of the elements. It also helped me in designing different components such as tab bar, image slider,
+                etc.
+                <br> Click <a href="https://www.w3schools.com/">here</a> to go to the page.
+            </p>
+        </div>
+
+        <div id="research2" class="tabcontent">
+            <h3>
+                <center>Techco.com</center>
+            </h3>
+            <br>
+            <center><img src="../Images/tech_research.png" alt="techo" height=500px width=350px></center>
+            <p style="font-family: 'PT Serif', serif; font-size:17px">This site provides complete explanation of pseudocode. The explanation is done using simple and easily understandable words and few examples of the impacts of technology is also given, so that, most people can easily catch the concept. I had
+                referred to this website to help me with my blog on the impacts of technology on our daily lives. It helped me gain further knowledge about the vast impacts of technologies on the people.
+                <br>Click <a href="https://tech.co/news/6-main-ways-technology-impacts-daily-life-2017-02">here</a> to go to the page.
+            </p>
+        </div>
+
+        <div id="research3" class="tabcontent">
+            <h3>
+                <center>Web dev</center>
+            </h3>
+            <br>
+            <center><img src="../Images/web dev.png" alt="web dev" height=350px width=500px></center>
+            <p style="font-family: 'PT Serif', serif; font-size:17px">Web dev is a channel on YouTube which I referred to help me make the navigation bar for the website. The channel had detailed instructions on the process of formation of websites. This channel provided complete explanation of the process of
+                creating the navigation bar. I chose this type of navigation bar due to its simple but elegant structure. As the navigation bar uses unordered list it proved troublesome for others parts of the HTML code as the style used in the navigation
+                bar would create problems.
+            </p>
+        </div>
+
+        <div id="research4" class="tabcontent">
+            <h3>
+                <center>truecodes</center>
+            </h3>
+            <br>
+            <center><img src="../Images/truecodes.png" alt="truecodes" height=350px width=500px></center>
+            <p style="font-family: 'PT Serif', serif; font-size:17px">truecodes is a website which I referred to help me create effects and for HTML, CSS and JavaScript lessons. It increased my knowledge about the subject as well as helped me understand the many possibilities of creating desired webpages. The
+                webpage contains numerous ways of using the web technologies in a user-friendly and interactive manner. The design of the elements was appealing to me.
+                <br> Click <a href="https://truecodes.org/2019/03/10/3d-hover-effect-alita-card/">here</a> to go to the page.
+            </p>
+        </div>
+
+        <div id="research5" class="tabcontent">
+            <h3>
+                <center>MDN web docs</center>
+            </h3>
+            <br>
+            <center><img src="../Images/mdn web docs.png" alt="MDN web docs" height=350px width=500px></center>
+            <p style="font-family: 'PT Serif', serif; font-size:17px">MND web docs is a website on resources for developers, by developers. This site has tutorials on HTML, CSS and JavaScript from beginners to professional level. I referred to this website to gain basic knowledge about web technologies and gain
+                insight on the elements of the we technologies. It also had demos for the use of HTML, CSS and JavaScript. The site also had references and guides for beginner developers. Consulting to this website helped me gain the utilization of web
+                technologies in numerous ways.
+                <br> Click <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">here</a> to go to the page.
+            </p>
+        </div>
+    </div>
+
+    <!-- topFunction function gets called when button is clicked -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-4x fa-angle-up"></i></button>
+
+    <script>
+        // function to display the tab content when specified tab is clicked
+        function research(evt, researchMaterial) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(researchMaterial).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+
+</html>

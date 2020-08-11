@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Atal Shrestha</title>
+    <meta name="description" content="Coursework Website" />
+    <meta name="keywords" content="HTML,CSS,JS" />
+    <meta name="author" content="Atal Shrestha" />
+    <meta http-equiv="refresh" content="80">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <script src="myScript.js"></script>
+    <link rel="icon" type="image/png" href="../Images/logo_transparent.png" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .leftcolumn img {
+            border-radius: 50%;
+            /* To make circular image  */
+        }
+        
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+        /* Hover effect */
+        
+        .fa:hover {
+            opacity: 0.7;
+        }
+        /* Facebook icon color */
+        
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        /* instagram icon color */
+        
+        .fa-instagram {
+            background: #a70d48;
+            color: white;
+        }
+        /* separator between flex */
+        
+        .separator1 {
+            height: 300px;
+            display: inline-block;
+            border-left: 2px solid;
+            border-color: black;
+            margin: 0px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <a href="index.html"><img src="../Images/logo_transparent.png"></a>
+            </div>
+            <div class="url">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <!-- index page is the active page -->
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="head">
+        <div class="header">
+            <h1 id="changeCol">HI, Welcome</h1>
+        </div>
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2 style="margin-left:250px;">
+                        <center>About Me</center>
+                    </h2>
+                    <img id="aa" src="../Images/IMG_-e0shpk.jpg" alt="Atal Shrestha" align="left">
+                    <br>
+                    <p align="center" style="font-size:18px;"><br>My name is Atal Shrestha and I'm a student at Islington college studying B.Sc.Computing. i'm a first year student. Welcome to my website. The site consists of CV in the About section. The Blog consists of impact of technology.
+                        The Research section contains the research material. The Galley section contains some of the photos I have taken and the Contact contains form for feedback.
+                    </p>
+                </div>
+            </div>
+            <span class="separator1"></span>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>Follow Me</h2>
+                    <br>
+                    <a href="https://www.facebook.com/atal.shrestha.0" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/atal.stha/" class="fa fa-instagram"></a>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <footer>
+        </footer>
+</body>
+
+</html>

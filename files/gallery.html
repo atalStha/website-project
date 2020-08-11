@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Atal Shrestha</title>
+    <meta name="description" content="Coursework Website" />
+    <meta name="keywords" content="HTML,CSS,JS" />
+    <meta name="author" content="Atal Shrestha" />
+    <meta http-equiv="refresh" content="80">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <script src="myScript.js"></script>
+    <link rel="icon" type="image/png" href="../Images/logo_transparent.png" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box
+        }
+        
+        body {
+            font-family: Verdana, sans-serif;
+            background: #262626;
+            margin: 0;
+        }
+        
+        .mySlides {
+            display: none
+        }
+        
+        img {
+            vertical-align: middle;
+        }
+        /* Slideshow container */
+        
+        .slideshow-container {
+            position: relative;
+            margin: auto;
+            background: linear-gradient(#141e30, #243b55);
+        }
+        
+        .text {
+            color: #8D7C7C;
+        }
+        /* Next & previous buttons */
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        /* Position the "next button" to the right */
+        
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* The dots/bullets/indicators */
+        
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #b5b5b7;
+            border-radius: 50%;
+            display: inline-block;
+            transition: 0.6s ease;
+        }
+        
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+        /* Fading animation */
+        
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        .mySlides img {
+            box-shadow: 10px 10px 19px;
+            border-radius: 4px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        /* On smaller screens, decrease text size */
+        
+        @media only screen and (max-width: 300px) {
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+        
+        .footer {
+            color: #b5b5b7;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <a href="index.html"><img src="../Images/logo_transparent.png"></a>
+            </div>
+            <div class="url">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li class="active"><a href="gallery.html">Gallery</a></li>
+                    <!-- gallery page is the active page -->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="slideshow-container">
+        <div class="text" align="center">
+            <h1 style="font-family: 'PT Serif', serif;"><br>MY PHOTOGRAPHY</h1>
+        </div>
+
+        <div class="mySlides fade">
+            <center> <img src="../Images/Boat.jpeg" height="600"></center>
+        </div>
+
+        <div class="mySlides fade">
+            <center><img src="../Images/Nagarkot sunrise.jpeg" height="600"></center>
+        </div>
+
+        <div class="mySlides fade">
+            <center> <img src="../Images/Sky lantern.jpg" height="600"></center>
+        </div>
+
+        <div class="mySlides fade">
+            <center> <img src="../Images/Patan temple.jpeg" height="600"></center>
+        </div>
+
+        <div class="mySlides fade">
+            <center> <img src="../Images/Tihar.jpg" height="600"></center>
+        </div>
+
+        <div class="mySlides fade">
+            <center> <img src="../Images/Two cups.jpeg" height="600"></center>
+        </div>
+
+        <div class="mySlides fade">
+            <center> <img src="../Images/patan.jpg" height="600"></center>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+    </div>
+
+    <div class="footer">
+        <ul align="center">
+            <br>
+            <li><i class="fa fa-map-marker" style="font-size:24px"></i><span> Ason, Kathmandu</span></li>
+            <li><i class="fa fa-envelope" style="font-size:24px"></i><span> Email: atalshrestha2000@gmail.com</span></li>
+            <li><i class="fa fa-phone" style="font-size:24px"></i><span> +977 9860661760</span></li>
+        </ul>
+        <p align="center">&#169; 2019: Atal Shrestha</p>
+    </div>
+
+    <!-- topFunction function gets called when button is clicked -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-4x fa-angle-up"></i></button>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>
+
+</html>

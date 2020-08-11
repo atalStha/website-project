@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Atal Shrestha </title>
+    <meta name="description" content="Coursework Website" />
+    <meta name="keywords" content="HTML,CSS,JS" />
+    <meta name="author" content="Atal Shrestha" />
+    <meta http-equiv="refresh" content="80">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <script src="myScript.js"></script>
+    <link rel="icon" type="image/png" href="../Images/logo_transparent.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            text-align: center;
+            background: linear-gradient(#141e30, #243b55);
+            color: #b5b5b7;
+        }
+        
+        form {
+            display: inline-block;
+        }
+        
+        .footer {
+            background: #262626;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <a href="index.html"><img src="../Images/logo_transparent.png"></a>
+            </div>
+            <div class="url">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                    <!-- contact page is the active page -->
+                </ul>
+            </div>
+        </div>
+    </header>
+    <form name="messageForm" onsubmit="validateForm()" class="form">
+        <br>
+        <p><b>First name: </b><input type="text" name="firstname"></p>
+        <br>
+        <p><b>Last name: </b><input type="text" name="lastname"></p>
+        <br>
+        <p><b>Gender: </b><input type="radio" name="gender" value="male" checked> Male
+            <input type="radio" name="gender" value="female"> Female </p>
+        <br>
+        <p><b>Message: </b><br><textarea name="message" rows="10" cols="30" placeholder="Enter Message"></textarea></p>
+        <p><input type="submit" value="Send"></p>
+        <br>
+    </form>
+    </div>
+    <div class="footer">
+        <ul align="center">
+            <br>
+            <li><i class="fa fa-map-marker" style="font-size:24px"></i><span> Ason, Kathmandu</span></li>
+            <li><i class="fa fa-envelope" style="font-size:24px"></i><span> Email: atalshrestha2000@gmail.com</span></li>
+            <li><i class="fa fa-phone" style="font-size:24px"></i><span> +977 9860661760</span></li>
+        </ul>
+        <p align="center">&#169; 2019: Atal Shrestha</p>
+    </div>
+
+    <!-- topFunction function gets called when button is clicked -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-4x fa-angle-up"></i></button>
+
+    <script>
+        // function to show appropriate message when user inputs data
+        function validateForm() {
+            var fname = document.forms["messageForm"]["firstname"].value;
+            var lname = document.forms["messageForm"]["lastname"].value;
+            var gender = document.forms["messageForm"]["gender"].value;
+            var message = document.forms["messageForm"]["message"].value;
+
+            if (fname == "" || lname == "" || message == "") {
+                alert("Empty fields found.");
+            } else {
+                alert("Thank you for the feedback.");
+            }
+        }
+    </script>
+</body>
+
+</html>
